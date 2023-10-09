@@ -8,15 +8,22 @@ namespace Lab6_inheritance.Animals
 {
     internal class Elk : Deer
     {
+        // a questionable property
         public bool IsCute {  get; set; }
+
+        // .. with a questionable setting in the constructor
         public Elk(string name) : base("brown", name)
         {
             IsCute = false;
         }
-
+        
+        // life is tough
         public void DriveToExtinction()
         {
             Console.WriteLine("E, guys! Elks destroy my forest. Let's go hunting!");
         }
+
+        // elks have no own MakeSound-method, they have to inherit their sound
+
     }
 }

@@ -8,6 +8,7 @@ namespace Lab6_inheritance.Animals
 {
     internal class Animal
     {
+        // all animals have names, teeth, legs and can fly or live in water
         public string Name { get; set; }
         public int AmountTeeth { get; set; }
         public int AmountLegs { get; set; }
@@ -21,9 +22,10 @@ namespace Lab6_inheritance.Animals
             AmountLegs = amountLegs;
             CanFly = canFly;
             LivesInWater = livesInWater;
-            AmountTeeth = 0;
+            AmountTeeth = 20; //i have really counted them all
         }
 
+        //some common methods for all animals
         public void Eat()
         {
             Console.WriteLine($"Nomnomnom");

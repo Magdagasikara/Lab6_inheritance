@@ -8,12 +8,16 @@ namespace Lab6_inheritance.Animals
 {
     internal class Owl : Animal
     {
+        // a unique property of the owls
         public bool CanSoundHoho { get; set; }
 
+        // constructor: owls have 2 legs, can fly, dont live in water
         public Owl(string name) : base(name, 2, true, false)
         {
             CanSoundHoho = true;
         }
+        
+        // owls can attack animals with different outcomes
         public void AttackAnimal(Animal animal)
         {
             Random random = new Random();
@@ -32,9 +36,19 @@ namespace Lab6_inheritance.Animals
             }
 
         }
+
+        // the typical owl-sound
         public override void MakeSound()
         {
-            Console.WriteLine("Ho hoooooooo");
+            if (CanSoundHoho)
+            {
+                Console.WriteLine("Ho hoooooooo");
+            }
+            else
+            {
+                Console.WriteLine("Ho hhhhhh.. yrgh sorry not today");
+            }
+            
         }
 
     }
