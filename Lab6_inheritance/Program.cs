@@ -8,10 +8,10 @@ namespace Lab6_inheritance
         static void Main(string[] args)
         {
             // create some animals and a human, animals have default properties of their species and i just add names
-            Wolverine rosomak = new Wolverine("Djärv");
+            Wolverine rosomak = new Wolverine("Djärving");
             Reindeer rudolf = new Reindeer("Rudolf");
             Elk elk = new Elk("Damoouse");
-            Animal greyowl = new Owl("Oogle");
+            Owl greyowl = new Owl("Oogle");
             Human magda = new Human("Magda", false);
             // nobody knows species of this one
             Animal newcomer = new Animal("Herr Disaster", 3, false, false);
@@ -30,7 +30,7 @@ namespace Lab6_inheritance
             Console.Write("reindeer says: ");
             rudolf.MakeSound();
             Console.Write("elk says: ");
-            elk.MakeSound();
+            elk.MakeSound(); // he gets the universal deer sound, no override for elks
             Console.Write("magda says: ");
             magda.MakeSound();
             // animal makes a sound with the base method
@@ -39,18 +39,25 @@ namespace Lab6_inheritance
             Console.WriteLine("------------------");
 
             // can you teach them fly?
-            elk.LearnToFly();
-            greyowl.LearnToFly();
+            Console.Write($"The moose is being taught to fly: "); elk.LearnToFly();
+            Console.Write($"Grey owl is being taught to fly: "); greyowl.LearnToFly();
             Console.WriteLine("------------------");
 
             // can they make it to the freedom
-            Console.WriteLine($"Has Rudolf escaped the zoo: {rudolf.TryToEscapeZoo()}");
+            Console.Write($"Grey owl attacked a wolverine: "); greyowl.AttackAnimal(rosomak); 
+            Console.Write($"Grey owl attacked the poor animal: ");greyowl.AttackAnimal(newcomer);
             Console.WriteLine("------------------");
 
-            // who let hunters enter the zoo?
+            // who let hunters enster the zoo?
             Console.WriteLine($"Has {rudolf.Name} survived the hunt: {rudolf.SurvivedAHunt()}");
             Console.WriteLine($"Has {elk.Name} survived the hunt: {elk.SurvivedAHunt()}");
             Console.WriteLine("------------------");
+
+            // just to doublecheck the human's role
+            Console.WriteLine($"Employee: {magda.Employee} ");
+            Console.WriteLine($"Visitor: {magda.Visitor} ");
+            Console.WriteLine("------------------");
+
         }
     }
 }

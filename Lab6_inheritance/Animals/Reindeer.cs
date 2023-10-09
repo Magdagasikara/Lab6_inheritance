@@ -8,8 +8,15 @@ namespace Lab6_inheritance.Animals
 {
     internal class Reindeer : Deer
     {
+        public bool IsCute { get; set; }
+        public bool TastesGood {  get; set; }
+
+
         public Reindeer(string name) : base("grey", name)
         {
+            IsCute = true;
+            TastesGood = true;
+
         }
         public override void MakeSound()
         {

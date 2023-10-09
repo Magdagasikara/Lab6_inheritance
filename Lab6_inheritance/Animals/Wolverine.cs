@@ -21,7 +21,7 @@ namespace Lab6_inheritance.Animals
             Console.WriteLine("This was nummy, but one day I will catch YOUUUUU!");
         }
 
-        public virtual void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("(i dont think you will ever hear me!)");
         }

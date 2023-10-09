@@ -28,7 +28,7 @@ namespace Lab6_inheritance.Animals
             }
             else
             {
-                Console.WriteLine($"RIP {animal.Name}. 12/04/1983 - {DateTime.Today.ToString("MM/dd/yyyy")}");
+                Console.WriteLine($"RIP {animal.Name}. 12.04.1983 - {DateTime.Today.ToString("dd/MM/yyyy")}");
             }
 
         }
