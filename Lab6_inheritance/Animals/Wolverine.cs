@@ -18,7 +18,7 @@ namespace Lab6_inheritance.Animals
             Name = name;
         }
 
-        // they can eat
+        // they can eat. use the "new" keyword to override the animals' method
         public new void Eat()
         {
             Console.WriteLine("This was nummy, but one day I will catch YOUUUUU!");

@@ -8,16 +8,15 @@ namespace Lab6_inheritance.Animals
 {
     internal class Reindeer : Deer
     {
-        // questionnable properties
+        // some questionable properties
         public bool IsCute { get; set; }
         public bool TastesGood {  get; set; }
 
-        // constructor with non questionnable default values
+        // constructor with non questionable default values
         public Reindeer(string name) : base("grey", name)
         {
             IsCute = true;
             TastesGood = true;
-
         }
 
         // everyone knows how a reindeer sounds

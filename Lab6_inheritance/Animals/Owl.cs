@@ -34,7 +34,6 @@ namespace Lab6_inheritance.Animals
             {
                 Console.WriteLine($"RIP {animal.Name}. 12.04.1983 - {DateTime.Today.ToString("dd/MM/yyyy")}");
             }
-
         }
 
         // the typical owl-sound
@@ -47,9 +46,7 @@ namespace Lab6_inheritance.Animals
             else
             {
                 Console.WriteLine("Ho hhhhhh.. yrgh sorry not today");
-            }
-            
+            }            
         }
-
     }
 }
