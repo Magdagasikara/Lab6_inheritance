@@ -17,7 +17,7 @@ namespace Lab6_inheritance.Animals
             IsCute = false;
         }
         
-        // life is tough
+        // life is tough (this kind of method should probably be in the humans' class but I didn't come up with a better one for elks)
         public void DriveToExtinction()
         {
             Console.WriteLine("E, guys! Elks destroy my forest. Let's go hunting!");

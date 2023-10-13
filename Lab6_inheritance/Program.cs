@@ -23,7 +23,7 @@ namespace Lab6_inheritance
             Console.WriteLine("------------------");
 
             // animals make sounds with overriden methods
-            Console.Write("wolverine says: ");
+            Console.Write("wolverine says: "); 
             rosomak.MakeSound();
             Console.Write("owl says: ");
             greyowl.MakeSound();
@@ -43,7 +43,7 @@ namespace Lab6_inheritance
             Console.Write($"Grey owl is being taught to fly: "); greyowl.LearnToFly();
             Console.WriteLine("------------------");
 
-            // can they make it to the freedom
+            // can they make it after being attacked
             Console.Write($"Grey owl attacked a wolverine: "); greyowl.AttackAnimal(rosomak); 
             Console.Write($"Grey owl attacked the poor animal: ");greyowl.AttackAnimal(newcomer);
             Console.WriteLine("------------------");
